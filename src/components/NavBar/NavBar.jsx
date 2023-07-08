@@ -1,3 +1,4 @@
+import CardWidget from "./CardWidget/CardWidget";
 import "./NavBar.css"
 
 const NavBar = () => {
@@ -25,6 +26,7 @@ const NavBar = () => {
                             <a className="nav-link" href="">Contacto</a>
                         </li>
                     </ul>
+                    <CardWidget/>
                 </div>
             </div>
         </nav>
