@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ButtonComponent from "../components/NavBar/ButtonComponent/Button";
+import ButtonComponent from "../NavBar/ButtonComponent/Button";
 import "./Item.css"
 
 const Item = (props) => {

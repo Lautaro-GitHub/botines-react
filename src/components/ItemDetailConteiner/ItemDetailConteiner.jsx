@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { getProductData } from "../services/asyncMock";
+import { getProductData } from "../../services/asyncMock";
 import { useParams } from "react-router-dom";
-import ItemDetail from "../components/NavBar/ItemDetail/ItemDetail";
+import ItemDetail from "../NavBar/ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
   const [productos, setProduct] = useState([]);
