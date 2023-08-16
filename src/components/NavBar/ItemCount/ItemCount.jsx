@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ItemCount.css";
 import ButtonComponent from "../ButtonComponent/Button";
 
-function ItemCount({stock}) {
+function ItemCount({stock,onAddToCart}) {
   const [clickCount, setClickCount] = useState(1);
 
   function handleClickAdd() {
@@ -27,7 +27,7 @@ function ItemCount({stock}) {
       <button className="item-count-button" onClick={handleClickAdd}>
         +
       </button>
-     <ButtonComponent colorFondo="purple">Añadir al carrito</ButtonComponent>
+     <ButtonComponent onClick={() => onAddToCart(clickCount)} colorFondo="purple">Añadir al carrito</ButtonComponent>
     </div>
   );
 }

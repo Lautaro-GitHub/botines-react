@@ -95,7 +95,7 @@ export const getProductData = (idURL) => {
 export const getCategory = (categoryData) => {
   return new Promise((resolve) => {
     const userCategory = productos.filter((item) => {
-      return item.categoryId === categoryData;
+      return item.category === categoryData;
     });
 
     setTimeout(() => {

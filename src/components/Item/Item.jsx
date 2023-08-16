@@ -17,7 +17,7 @@ const Item = (props) => {
         <h4>$ {price}</h4>
         <small>{description}</small>
       </div>
-      <Link to={`/producto/${id}`}>
+      <Link to={`/product/${id}`}>
         <ButtonComponent colorFondo="purple">Ver Producto</ButtonComponent>
       </Link>
     </div>
